@@ -4,10 +4,10 @@ import "./globals.css";
 import Head from "next/head";
 import { NavBar } from "./component/NavBar";
 
-const montserrat = Montserrat({ 
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-mont" 
- });
+  variable: "--font-mont",
+});
 
 export const metadata: Metadata = {
   title: "OMAR Dev",
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="from-slate-100 bg-slate-600">
       <head>
         <NavBar />
       </head>
