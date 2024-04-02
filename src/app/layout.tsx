@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="from-slate-100 bg-slate-600">
+    <html lang="en" className="">
       <head>
         <NavBar />
       </head>
