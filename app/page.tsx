@@ -8,7 +8,7 @@ import Lights from "./component/Lights";
 export default function Home() {
   return (
     <div className="h-full mt-10">
-      <div className="flex flex-row justify-between items-center ">
+      <div className=" flex flex-col-reverse md:flex-row justify-between items-center ">
       <div className="flex flex-row  ml-12 gap-x-5  justify-center">
         <div className="h-72  rounded-xl  w-2 bg-slate-200"></div>
         <div className="">
@@ -23,9 +23,7 @@ export default function Home() {
         <Myimg />
       </div>
       </div>
-      <div className="mx-24"> 
-      <SocialMedia/>
-      </div>
+     
       <Lights/>
     </div>
   );

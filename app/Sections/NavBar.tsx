@@ -16,10 +16,10 @@ export const NavBar = () => {
       <div className="">
         <Logo />
       </div>
-      <nav className="hidden w-1/3 md:flex flex-row justify-between ">
+      <nav className="hidden w-1/2 md:flex flex-row justify-between ">
         <CostumLink href="/" title="Home" className="text-xl" />
         <CostumLink href="/about" title="About" className="text-xl" />
-        {/* <CostumLink href="/contact" title="Contact" className="text-xl" /> */}
+         <CostumLink href="/contact" title="Contact" className="text-xl" /> 
         <CostumLink href="/articles" title="Articls" className="text-xl" />
       </nav>
       <Houmberg />

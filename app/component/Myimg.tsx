@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 function Myimg() {
   return (
-    <div className=''>
+    <div className=' ml-6'>
         <Image
     src={"/pic.png"}
     width={500}
