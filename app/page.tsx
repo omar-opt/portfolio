@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import Myimg from "../components/Myimg";
 import Lights from "../components/Lights";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -9,7 +11,7 @@ export default function Home() {
       <div className=" flex flex-col-reverse md:flex-row justify-between items-center gap-y-12 ">
         <div className="flex flex-row  md:ml-12 md:gap-x-5  justify-center">
           <div className="hidden md:block  h-72  rounded-xl  w-2 bg-slate-200"></div>
-          <div className="flex flex-col justify-center items-center md:justify-start">
+          <div className="flex flex-col justify-center items-center md:items-start md:justify-start">
             <p className="text-2xl  my-5">Hello,My name is</p>
             <p className="text-[40px] my-2 font-bold text-nowrap ">
               OMAR CHABIRA
@@ -21,7 +23,11 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, transition: { duration: 2 }, y: 0 }}
+          viewport={{ once: true }}
+        >
           <Image
             src={"/pic.png"}
             priority={true}
@@ -30,7 +36,7 @@ export default function Home() {
             alt="My SVG image"
             className="z-11 object-contain rounded-full shadow-2xl"
           />
-        </div>
+        </motion.div>
       </div>
 
       <Lights />

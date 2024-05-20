@@ -1,12 +1,21 @@
+// "use client";
 import React from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export const Logo = () => {
   return (
-    <div className="text-white p-1 hover:bg-slate-700 hover:scale-110 focus:outline-none focus:ring focus:ring-[#0e1016d1]">
-      <Link href="/" className="text-3xl">
+    <motion.div
+      className="text-white p-4 rounded-full w-22 h-22"
+      whileHover={{
+        backgroundColor: ["", "#003fff33", "", "#003fff39"],
+        scale: 1.3,
+        transition: { duration: 1, repeat: 2 },
+      }}
+    >
+      <Link href="/" className="text-3xl w-full h-full">
         OM
       </Link>
-    </div>
+    </motion.div>
   );
 };
