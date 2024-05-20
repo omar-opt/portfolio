@@ -11,7 +11,7 @@ export default function Home() {
       <div className=" flex flex-col-reverse md:flex-row justify-between items-center gap-y-12 ">
         <div className="flex flex-row  md:ml-12 md:gap-x-5  justify-center">
           <div className="hidden md:block  h-72  rounded-xl  w-2 bg-slate-200"></div>
-          <div className="flex flex-col justify-center items-center md:items-start md:justify-start">
+          <div className="flex flex-col justify-center min-w-44 items-center md:items-start md:justify-start">
             <p className="text-2xl  my-5">Hello,My name is</p>
             <p className="text-[40px] my-2 font-bold text-nowrap ">
               OMAR CHABIRA
