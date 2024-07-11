@@ -20,9 +20,7 @@ export default function Home() {
           <div className="hidden md:block  h-72  rounded-xl  w-2 bg-slate-200"></div>
           <div className="flex flex-col justify-center min-w-64 md:w-96 items-center md:items-start md:justify-start">
             <p className="text-2xl  my-5">Hello,Im </p>
-            <p className="text-[40px] my-2 font-bold text-nowrap ">
-              OMAR CHABIRA
-            </p>
+            <p className="text-[40px] my-2  text-nowrap ">OMAR CHABIRA</p>
             <div className="w-full text-[24px] mt-7 flex gap-x-2">
               <p>{">"}</p>
               <Typewriter

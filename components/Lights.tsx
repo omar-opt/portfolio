@@ -24,9 +24,9 @@ function Lights() {
   // );
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <motion.div
-        className="w-[444px] h-96  absolute top-40 left-24"
+        className="w-40 md:w-[444px] h-96  absolute top-10 md:top-40 left-2  sm:left-24"
         style={{ rotate }}
       >
         <motion.div
@@ -45,10 +45,10 @@ function Lights() {
         ></motion.div>
       </motion.div>
       <motion.div
-        className="w-[444px] h-96  absolute top-[444px] left-[55%]"
+        className="w-40 h-40 rounded-full   md:w-[444px]  md:h-96  absolute top-[444px] left-24 sm:left-[55%]"
         style={{ rotate }}
       >
-        <motion.div className="hidden md:block w-72 h-60 rounded-full bg-[#4D5BCE] z-0 blur-[30px] bg-opacity-25 top-[52%] left-[36%]"></motion.div>
+        <motion.div className="w-52 h-52  md:w-64 md:h-64  rounded-full bg-[#4e62f8] z-0 blur-[30px] bg-opacity-25 top-[52%] left-[36%]"></motion.div>
       </motion.div>
       <div className="absolute w-40 h-44 rounded-full bg-[#56a2ff] z-0 blur-[100px] bg-opacity-30 left-6 md:left-[85%]  top-44"></div>
       <div className="absolute w-24 h-24 rounded-full bg-[#2c6087c5] z-0 blur-[60px] bottom-1 left-32 bg-opacity-40"></div>

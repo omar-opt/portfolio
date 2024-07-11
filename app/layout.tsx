@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
 import "./globals.css";
 import { NavBar } from "../components/NavBar";
+import MouseAnimation from "../components/MouseAnimation";
 
 const montserrat = Fira_Code({
   subsets: ["latin"],
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en" className="">
       <body className={`${montserrat.variable} font-mont`}>
         <NavBar />
+        <MouseAnimation />
         {children}
       </body>
     </html>
