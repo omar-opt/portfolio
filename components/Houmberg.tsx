@@ -1,4 +1,5 @@
 // "use client ";
+import Link from "next/link";
 import { CostumLink } from "./CostumLink";
 import { motion } from "framer-motion";
 
@@ -8,13 +9,21 @@ export const Houmberg = () => {
       initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 40, transition: { duration: 0.2 } }}
       exit={{ y: -100, transition: { duration: 0.4 } }}
-      className="absolute  top-14 left-0 z-50  w-screen h-screen bg-black/30  backdrop-blur-2xl"
+      className="absolute  -top-1 left-0 z-50  w-screen h-screen bg-[#011627ad] backdrop-blur-2xl"
     >
-      <nav className="flex flex-col mt-44 justify-center items-center gap-y-16 ">
-        <CostumLink href="/" title="Home" className="text-2xl" />
-        <CostumLink href="/about" title="About" className="text-2xl" />
-        <CostumLink href="/contact" title="Contact" className="text-2xl" />
-        <CostumLink href="/articles" title="Articls" className="text-2xl" />
+      <nav className="flex flex-col w-full h-full mt-2 justify-start items-start border-[#1E2D3D]  gap-y-5 divide-y divide-[#1E2D3D]">
+        <Link href="/" className="text-[16px] w-full px-2 py-1 ">
+          _home
+        </Link>
+        <Link href="/about" className="text-[16px] w-full  px-2 py-1">
+          _about
+        </Link>
+        <Link href="/contact" className="text-[16px] w-full px-2 py-1">
+          _contact
+        </Link>
+        <Link href="/articles" className="text-[16px] w-full px-2 py-1">
+          _articls
+        </Link>
       </nav>
     </motion.div>
   );

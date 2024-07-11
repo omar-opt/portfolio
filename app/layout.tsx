@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Fira_Code } from "next/font/google";
 import "./globals.css";
 import { NavBar } from "../components/NavBar";
 
-const montserrat = Montserrat({
+const montserrat = Fira_Code({
   subsets: ["latin"],
   variable: "--font-mont",
 });
