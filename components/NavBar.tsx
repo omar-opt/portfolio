@@ -18,7 +18,7 @@ export const NavBar = () => {
   };
   // window.addEventListener("dblclick", handelclick);
   return (
-    <div className="w-full fixed top-0 lg:pl-10  flex flex-row items-center justify-between  border border-[#1E2D3D]  ">
+    <div className="w-full bg-[#011627] fixed z-50 drop-shadow-xl top-0 lg:pl-10  flex flex-row items-center justify-between  border-b border-[#1E2D3D]  ">
       <div>
         <p className="text-lg text-[#607B96] w-44 p-1">chabira_omar</p>
       </div>

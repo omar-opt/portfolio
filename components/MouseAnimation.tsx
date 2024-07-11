@@ -23,11 +23,9 @@ function MouseAnimation() {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        scale: 1.2,
-        rotate: 360,
 
-        x: mousePlace.x - 16,
-        y: mousePlace.y - 16,
+        x: mousePlace.x - 20,
+        y: mousePlace.y - 20,
         transition: { duration: 0, ease: "easeIn" },
       }}
     ></motion.div>
