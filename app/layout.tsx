@@ -4,6 +4,7 @@ import "./globals.css";
 import { NavBar } from "../components/NavBar";
 import MouseAnimation from "../components/MouseAnimation";
 import Footer from "../components/Footer";
+import { motion } from "framer-motion";
 
 const montserrat = Fira_Code({
   subsets: ["latin"],
@@ -23,8 +24,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="">
       <body className={`${montserrat.variable} font-mont `}>
-        <NavBar />
         <MouseAnimation />
+        <NavBar />
         {children}
         <Footer />
       </body>

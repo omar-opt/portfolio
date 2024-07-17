@@ -7,10 +7,17 @@ function MouseAnimation() {
     x: 0,
     y: 0,
   });
+  const [borderPlace, setborderPlace] = useState({
+    x: 0,
+    y: 0,
+  });
   useEffect(() => {
     const mousePostion = (e: any) => {
       console.log("sss", e);
-      setMousePlace({ x: e.clientX, y: e.clientY });
+      setTimeout(() => {
+        setMousePlace({ x: e.clientX, y: e.clientY });
+      }, 50);
+      setborderPlace({ x: e.clientX, y: e.clientY });
     };
     window.addEventListener("mousemove", mousePostion);
     return;
@@ -18,17 +25,27 @@ function MouseAnimation() {
   }, []);
 
   return (
-    <motion.div
-      className="hidden sm:block w-10 h-10 rounded-full bg-[#67f8cc] absolute  blur-md"
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-
-        x: mousePlace.x - 20,
-        y: mousePlace.y - 20,
-        transition: { duration: 0, ease: "easeIn" },
-      }}
-    ></motion.div>
+    <>
+      <motion.div
+        className="w-10 h-10 rounded-full fixed border border-[#67f8cc] flex items-center  justify-center "
+        // initial={{ opacity: 0 }}
+        animate={{
+          x: mousePlace.x - 20,
+          y: mousePlace.y - 60,
+          transition: { duration: 0 },
+        }}
+      ></motion.div>
+      <motion.div
+        animate={{
+          x: borderPlace.x - 4,
+          y: borderPlace.y - 44,
+          // x: mousePlace.x - 4,
+          // y: mousePlace.y - 44,
+          transition: { duration: 0 },
+        }}
+        className="w-2 h-2  fixed rounded-full bg-[#67f8cc]"
+      ></motion.div>
+    </>
   );
 }
 

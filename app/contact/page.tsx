@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import SocialMedia from "../../components/SocialMedia";
 
 export default function Page() {

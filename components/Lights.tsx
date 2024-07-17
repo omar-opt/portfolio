@@ -45,7 +45,7 @@ function Lights() {
         ></motion.div>
       </motion.div>
       <motion.div
-        className="w-40 h-40 rounded-full   md:w-[444px]  md:h-96  absolute top-[444px] left-24 sm:left-[55%]"
+        className="w-40 h-40 rounded-full   md:w-[444px]  md:h-96  absolute top-[334px] left-24 sm:left-[55%]"
         style={{ rotate }}
       >
         <motion.div className="w-52 h-52  md:w-64 md:h-64  rounded-full bg-[#4e62f8] z-0 blur-[30px] bg-opacity-25 top-[52%] left-[36%]"></motion.div>
