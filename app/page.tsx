@@ -52,9 +52,9 @@ export default function Home() {
     });
   }, []);
   return (
-    <motion.div className="w-full  flex flex-col justify-center items-center h-screen ">
+    <motion.div className="w-full  flex flex-col text-center justify-center items-center h-screen ">
       {" "}
-      <div className="w-full flex items-center justify-center text-5xl md:text-9xl text-transparent bg-gradient-to-r bg-clip-text from-[#ffffff] from-10% via-[#5e5e5e] via-60% to-[#292929] ">
+      <div className="w-full flex text-center pl-8 text-transparent bg-gradient-to-r bg-clip-text from-[#ffffff] from-10% via-[#5e5e5e] via-60% to-[#292929]  items-center justify-center text-5xl md:text-9xl">
         <Typewriter
           options={{
             strings: ["CHABIRA AMAR", "CHABIRA AMAR"],
@@ -65,11 +65,11 @@ export default function Home() {
           }}
         />
       </div>
-      <p className="flex text-wrap w-2/4 md:text-xl text-xs text-center justify-center items-center">
+      <p className="flex text-wrap w-2/4 md:text-xl text-xs text-center mt-10 justify-center items-center">
         {" "}
         web developer, mobile app developer, desktop app developer, SAAS creater
       </p>
-      <p className="bottom-2 flex w-2/4 text-center mt-24 text-slate-500 p-20">
+      <p className="bottom-2 flex w-2/4 text-center mt-16 text-slate-500 md:p-20">
         I am a full stack devloper and specialized in frontend and designer ,
         Chekcout my project and bloges in my social media accounts and GitHub
       </p>

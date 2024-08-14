@@ -26,18 +26,18 @@ export const NavBar = () => {
         <nav className="hidden w-1/2 md:flex md:flex-row  ">
           <CostumLink
             href="/"
-            title="_home"
+            title="_project"
             className="text-[16PX] text-[#607B96] border-x p-1.5 w-36 flex  items-center justify-center border-[#1E2D3D]"
           />
           <CostumLink
             href="/about"
-            title="_about"
+            title="_blogs"
             className="text-[16PX] text-[#607B96] border-x p-1.5 w-36 flex  items-center justify-center border-[#1E2D3D] "
           />
 
           <CostumLink
             href="/articles"
-            title="_projects"
+            title="_Component"
             className="text-[16PX] text-[#607B96] border-x p-1.5 w-36 flex  items-center justify-center border-[#1E2D3D]"
           />
         </nav>
