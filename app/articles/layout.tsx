@@ -18,5 +18,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <div className="mt-10">{children}</div>;
+  return <div className="flex ">{children}</div>;
 }

@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="">
-      <body className={`${montserrat.variable} font-mont `}>
+      <body className={`${montserrat.variable} font-mont  overflow-hidden`}>
         <MouseAnimation />
         <NavBar />
         {children}

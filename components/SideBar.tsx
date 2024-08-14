@@ -22,7 +22,7 @@ function SideBar() {
           <p>interests</p>
         </div>
       </Link>
-      <Link href={"/about/education"} className="flex  items-center gap-x-2 ">
+      <Link href={"/about/education"} className="flex  items-center gap-x-2">
         <FaCaretRight size={22} />
         <div className="flex items-center gap-2">
           <FaFolder size={18} color="#3A49A4" />

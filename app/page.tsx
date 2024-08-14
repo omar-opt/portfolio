@@ -4,6 +4,9 @@ import Myimg from "../components/Myimg";
 import Lights from "../components/Lights";
 import Lottie from "lottie-react";
 import laptop from "../public/laptop.json";
+
+import { LampContainer } from "../components/ui/lamp";
+
 import Image from "next/image";
 import {
   animate,
@@ -15,6 +18,7 @@ import Typewriter from "typewriter-effect";
 import Link from "next/link";
 
 import { FiArrowRight } from "react-icons/fi";
+import { BackgroundBeams } from "../components/ui/BackgroundBeams";
 const skyls = [
   "web developer",
   "mobile app developer",
@@ -48,65 +52,93 @@ export default function Home() {
     });
   }, []);
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-      style={{
-        backgroundImage,
-      }}
-      className="h-full place-content-center  mt-10 overflow-hidden  min-h-screen "
-    >
-      <div className=" flex flex-col-reverse min-h-screen   md:flex-row justify-center md:gap-x-36 items-center">
-        <div className="flex flex-row  md:ml-12 md:gap-x-5  justify-center items-center">
-          <div className="hidden md:block  h-72  rounded-xl  w-2 bg-slate-200"></div>
-          <div className="flex flex-col justify-center min-w-64 md:w-96 items-center md:items-start md:justify-start gap-y-10 sm:gap-y-4">
-            <p className="text-2xl  my-5">Hello,Im </p>
-            <p className="text-[40px] my-2  text-nowrap ">OMAR CHABIRA</p>
-            <div className="w-full text-[24px] mt-7 flex gap-x-2">
-              <p>{">"}</p>
-              <Typewriter
-                options={{
-                  strings: [
-                    "web developer",
-                    "mobile app developer",
-                    "desktop app developer",
-                  ],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
-            </div>
-            <div className="flex flex-col gap-y-4 mt-10">
-              <p className="text-[#607B96]">
-                {"//"} find my profile on Github:
-              </p>
-              <Link href="https://github.com/omar-opt" className="z-10">
-                https://github.com/omar-opt
-              </Link>
-            </div>
-            <motion.button
-              style={{
-                border,
-                boxShadow,
-              }}
-              whileHover={{
-                scale: 1.015,
-              }}
-              whileTap={{
-                scale: 0.985,
-              }}
-              className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-3 text-gray-50 transition-colors hover:bg-gray-950/50"
-            >
-              Download my CV
-              <FiArrowRight className="transition-transform group-hover:rotate-90 group-active:-rotate-12" />
-            </motion.button>
-          </div>
-        </div>
-        <Lottie animationData={laptop} loop={true} />
+    <motion.div className="w-full  flex flex-col justify-center items-center h-screen ">
+      {" "}
+      <div className="w-full flex items-center justify-center text-5xl md:text-9xl text-transparent bg-gradient-to-r bg-clip-text from-[#ffffff] from-10% via-[#5e5e5e] via-60% to-[#292929] ">
+        <Typewriter
+          options={{
+            strings: ["CHABIRA AMAR", "CHABIRA AMAR"],
+            loop: true,
+            autoStart: true,
+            deleteSpeed: 4,
+            wrapperClassName: "text-center",
+          }}
+        />
       </div>
-
-      <Lights />
+      <p className="flex text-wrap w-2/4 md:text-xl text-xs text-center justify-center items-center">
+        {" "}
+        web developer, mobile app developer, desktop app developer, SAAS creater
+      </p>
+      <p className="bottom-2 flex w-2/4 text-center mt-24 text-slate-500 p-20">
+        I am a full stack devloper and specialized in frontend and designer ,
+        Chekcout my project and bloges in my social media accounts and GitHub
+      </p>
+      <BackgroundBeams />
     </motion.div>
   );
+}
+
+{
+  /* <motion.div
+// initial={{ opacity: 0, y: 30 }}
+// animate={{ opacity: 1, y: 0 }}
+// transition={{ duration: 1 }}
+// style={{
+//   backgroundImage,
+// }}
+className=" place-content-center overflow-hidden  min-h-screen flex flex-col justify-center items-center "
+>
+<div className=" flex flex-col-reverse min-h-screen   md:flex-row justify-center md:gap-x-36 items-center">
+  <div className="flex flex-row  md:ml-12 md:gap-x-5  justify-center items-center">
+    <div className="hidden md:block  h-72  rounded-xl  w-2 bg-slate-200"></div>
+    <div className="flex flex-col justify-center min-w-64 md:w-96 items-center md:items-start md:justify-start gap-y-10 sm:gap-y-4">
+      <LampContainer>
+        <p className="text-2xl  my-5">Hello,Im </p>
+        <p className="text-[40px] my-2  text-nowrap ">OMAR CHABIRA</p>
+        <div className="w-full text-[24px] mt-7 flex gap-x-2">
+          <p>{">"}</p>
+          <Typewriter
+            options={{
+              strings: [
+                "web developer",
+                "mobile app developer",
+                "desktop app developer",
+              ],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </div>
+        <div className="flex flex-col gap-y-4 mt-10">
+          <p className="text-[#607B96]">
+            {"//"} find my profile on Github:
+          </p>
+          <Link href="https://github.com/omar-opt" className="z-10">
+            https://github.com/omar-opt
+          </Link>
+        </div>
+        <motion.button
+          style={{
+            border,
+            boxShadow,
+          }}
+          whileHover={{
+            scale: 1.015,
+          }}
+          whileTap={{
+            scale: 0.985,
+          }}
+          className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-3 text-gray-50 transition-colors hover:bg-gray-950/50"
+        >
+          Download my CV
+          <FiArrowRight className="transition-transform group-hover:rotate-90 group-active:-rotate-12" />
+        </motion.button>
+      </LampContainer>
+    </div>
+  </div>
+  <Lottie animationData={laptop} loop={true} />
+</div>
+
+<Lights />
+</motion.div> */
 }

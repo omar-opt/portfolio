@@ -18,6 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: url(../public/12px\ Flip\ Grid.png),
-    #011627 0% 0% / 100px 100px repeat;
+  /* background: url(../public/12px\ Flip\ Grid.png),
+    #011627 0% 0% / 100px 100px repeat; */
+  @apply bg-neutral-950;
 }

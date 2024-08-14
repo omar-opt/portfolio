@@ -18,7 +18,7 @@ export const NavBar = () => {
   };
   // window.addEventListener("dblclick", handelclick);
   return (
-    <div className="w-full bg-[#011627] fixed z-50 drop-shadow-xl -top-0.5 lg:pl-10  flex flex-row items-center justify-between  border-b border-[#1E2D3D]  ">
+    <div className="w-full fixed  z-50 drop-shadow-xl -top-0.5 lg:pl-10  flex flex-row items-center justify-between  border-b border-[#1E2D3D]  ">
       <div>
         <p className="text-lg text-[#607B96] w-48 p-1">chabira_omar</p>
       </div>
@@ -37,7 +37,7 @@ export const NavBar = () => {
 
           <CostumLink
             href="/articles"
-            title="_articls"
+            title="_projects"
             className="text-[16PX] text-[#607B96] border-x p-1.5 w-36 flex  items-center justify-center border-[#1E2D3D]"
           />
         </nav>
