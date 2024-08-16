@@ -18,27 +18,25 @@ export const NavBar = () => {
   };
   // window.addEventListener("dblclick", handelclick);
   return (
-    <div className="w-full fixed  z-50 drop-shadow-xl -top-0.5 lg:pl-10  flex flex-row items-center justify-between  border-b border-[#1E2D3D]  ">
+    <div className="w-full fixed  z-50 drop-shadow-xl bg-neutral-950 -top-0.5 lg:pl-10  flex flex-row items-center justify-between  border-b border-[#1E2D3D]  ">
       <div>
-        <p className="text-lg text-[#607B96] w-48 p-1">chabira_omar</p>
+        <CostumLink
+          href={"/"}
+          title=" chabira_omar"
+          className="text-lg text-[#607B96] text-[16PX]  p-1.5 w-48 flex  items-center justify-center"
+        />
       </div>
       <div className="hidden  md:flex flex-row items-center justify-between w-full">
         <nav className="hidden w-1/2 md:flex md:flex-row  ">
           <CostumLink
-            href="/"
-            title="_project"
+            href="/projects"
+            title="_projects"
             className="text-[16PX] text-[#607B96] border-x p-1.5 w-36 flex  items-center justify-center border-[#1E2D3D]"
           />
           <CostumLink
-            href="/about"
+            href="/bloges"
             title="_blogs"
             className="text-[16PX] text-[#607B96] border-x p-1.5 w-36 flex  items-center justify-center border-[#1E2D3D] "
-          />
-
-          <CostumLink
-            href="/articles"
-            title="_Component"
-            className="text-[16PX] text-[#607B96] border-x p-1.5 w-36 flex  items-center justify-center border-[#1E2D3D]"
           />
         </nav>
         <CostumLink

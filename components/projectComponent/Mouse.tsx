@@ -27,7 +27,7 @@ function Mouse() {
   return (
     <>
       <motion.div
-        className="w-10 h-10 rounded-full  border border-[#67f8cc] flex items-center  justify-center "
+        className="w-10 h-10 rounded-full -z-50  border border-[#67f8cc] flex items-center  justify-center "
         // initial={{ opacity: 0 }}
         animate={{
           x: mousePlace.x - 20,
@@ -43,7 +43,7 @@ function Mouse() {
           // y: mousePlace.y - 44,
           transition: { duration: 0 },
         }}
-        className="w-2 h-2   rounded-full bg-[#67f8cc]"
+        className="w-2 h-2  -z-50  rounded-full bg-[#67f8cc]"
       ></motion.div>
     </>
   );

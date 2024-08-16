@@ -57,7 +57,7 @@ export default function Home() {
       <div className="w-full flex text-center pl-8 text-transparent bg-gradient-to-r bg-clip-text from-[#ffffff] from-10% via-[#5e5e5e] via-60% to-[#292929]  items-center justify-center text-5xl md:text-9xl">
         <Typewriter
           options={{
-            strings: ["CHABIRA AMAR", "CHABIRA AMAR"],
+            strings: ["CHABIRA OMAR", "CHABIRA OMAR"],
             loop: true,
             autoStart: true,
             deleteSpeed: 4,
