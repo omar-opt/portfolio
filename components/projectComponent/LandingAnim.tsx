@@ -37,7 +37,7 @@ function LandingAnim() {
       style={{
         backgroundImage,
       }}
-      className="h-full place-content-center  overflow-hidden rounded-lg"
+      className="h-full w-screen place-content-center  overflow-hidden rounded-lg"
     ></motion.div>
   );
 }

@@ -5,6 +5,7 @@ import { NavBar } from "../components/NavBar";
 import MouseAnimation from "../components/MouseAnimation";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
+import favIcon from "../public/pic.png";
 
 const montserrat = Fira_Code({
   subsets: ["latin"],
@@ -14,6 +15,9 @@ const montserrat = Fira_Code({
 export const metadata: Metadata = {
   title: "OMAR Dev",
   description: "omar portfolio",
+  icons: {
+    shortcut: favIcon.src,
+  },
 };
 
 export default function RootLayout({
@@ -23,10 +27,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="">
-      <body className={`${montserrat.variable} font-mont  overflow-hidden`}>
-        <MouseAnimation />
-        <NavBar />
-        {children}
+      <body className={`${montserrat.variable} font-mont `}>
+        {/* <MouseAnimation /> */}
+        <NavBar /> <div className="mt-16">{children}</div>
         <Footer />
       </body>
     </html>
