@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
 import "./globals.css";
-import { NavBar } from "../components/NavBar";
 import MouseAnimation from "../components/MouseAnimation";
-import Footer from "../components/Footer";
+import Footer from "../components/pageComp/Footer";
 import { motion } from "framer-motion";
 import favIcon from "../public/pic.png";
+import NavBar from "../components/pageComp/NavBar";
 
 const montserrat = Fira_Code({
   subsets: ["latin"],
@@ -27,9 +27,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="">
-      <body className={`${montserrat.variable} font-mont `}>
-        {/* <MouseAnimation /> */}
-        <NavBar /> <div className="mt-16">{children}</div>
+      <body className={`${montserrat.variable} font-mont  `}>
+        <NavBar /> 
+        <div className="mt-28
+        ">{children}</div>
         <Footer />
       </body>
     </html>

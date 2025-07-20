@@ -1,6 +1,6 @@
 // "use client ";
 import Link from "next/link";
-import { CostumLink } from "./CostumLink";
+import { CostumLink } from "../CostumLink";
 import { motion } from "framer-motion";
 
 export const Houmberg = () => {

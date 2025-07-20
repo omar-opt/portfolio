@@ -1,9 +1,10 @@
-import {
-  animate,
-  motion,
-  useMotionTemplate,
-  useMotionValue,
-} from "framer-motion";
+import Hero from "../components/pageComp/Hero";
+
 export default function Home() {
-  return <div></div>;
+  return (
+    <div className="w-full flex flex-col items-center justify-center text-wrap">
+      {" "}
+      <Hero />
+    </div>
+  );
 }

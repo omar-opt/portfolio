@@ -2,14 +2,18 @@ import Link from "next/link";
 import React from "react";
 import CompPage from "../../components/projectComponent/CompPage";
 import ProjectPage from "../../components/Project/ProjectPage";
+import ButtonFir from "../../components/projectComponent/ButtonFir";
+import ButtonSec from "../../components/projectComponent/ButtonSec";
 
 function page() {
   return (
     <div className="w-full pt-10 top-0 flex flex-col gap-4  justify-center items-center">
       <Navi />
-      <div className=" w-11/12 flex flex-col items-center justify-center">
-        <CompPage />
-        <ProjectPage />
+      <div className=" w-11/12 flex flex-col items-center justify-center bg-gray-800">
+
+      <ButtonFir />
+      <ButtonSec />
+
       </div>
     </div>
   );
