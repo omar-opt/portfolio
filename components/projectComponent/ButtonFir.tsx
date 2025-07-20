@@ -3,14 +3,16 @@ import { motion, useMotionTemplate } from "framer-motion";
 import React from "react";
 
 function ButtonFir() {
-  const backgroundImage = useMotionTemplate`radial-gradient(30% 40% at 50% 50%,  #FFDF9999 40%,#A36F0099 )`;
-
+  const backgroundImage = useMotionTemplate`radial-gradient(30% 40% at 50% 50%, #2f2f2f 20%, #1A1A1A 90%, #1A1A1A 100%)`;
   return (
     <motion.div
       style={{ backgroundImage }}
-      className="py-2 px-4 rounded-lg drop-shadow shadow-sm shadow-slate-300 backdrop-blur-sm border hover:cursor-pointer z-10 border-[#A36F0099] bg-gradient-radial(140% 100% at 50% 15%, #011627 65%,white) "
-    >
-      إبدأ التجربة المجانية
+      className="py-6 px-10 rounded-2xl drop-shadow shadow-sm font-bold text-xl
+                 text-white 
+                 shadow-slate-300 backdrop-blur-sm border hover:cursor-pointer z-10
+                 border-gray-700 
+                 ">
+      Get in touch
     </motion.div>
   );
 }

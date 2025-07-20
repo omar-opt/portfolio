@@ -2,18 +2,35 @@
 import React from "react";
 
 import Typewriter from "typewriter-effect";
+import ButtonFir from "../projectComponent/ButtonFir";
 
 function Hero() {
   return (
-    <div className="w-full px-5 sm:w-11/12 flex flex-row justify-center items-center mt-8 md:mt-24 bg-red-200">
-      <div className=" w-full">
-        <p className="text-4xl md:text-6xl font-bold">
-          Hi, I am Omar,
+    <div className="w-full px-5 sm:w-11/12 flex flex-col justify-center items-center mt-8 md:mt-24 ">
+      <div className=" w-full text-center ">
+        <p className="text-2xl md:text-6xl font-bold">
+          Where Code Meets Creativity: Full-Stack Development & Design
           <br />
         </p>
-        <p className=""></p>
+        <div className="mt-4 sm:mt-8 text-lg md:text-3xl font-bold text-slate-200 px-5  md:px-44">
+          <Typewriter
+            options={{
+              strings: [
+                "I design and build beautiful, responsive, and user-centric websites and applications that solve real-world problems.",
+              ],
+              autoStart: true,
+              loop: false,
+              deleteSpeed: Infinity,
+              delay: 100,
+            }}
+          />
+        </div>
       </div>
-      <div></div>
+      <div className="w-full flex justify-center items-center mt-4 sm:mt-16">
+        <button className=""></button>
+        <ButtonFir />
+        <button></button>
+      </div>
     </div>
   );
 }
