@@ -27,10 +27,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="">
-      <body className={`${montserrat.variable} font-mont  `}>
-        <NavBar /> 
-        <div className="mt-28
-        ">{children}</div>
+      <body
+        className={`${montserrat.variable} font-mont  place-content-center `}>
+        <NavBar />
+        <div
+          className="mt-28
+        ">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
