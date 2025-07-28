@@ -3,12 +3,14 @@ import React from "react";
 
 function NavBar() {
   return (
-    <div className="w-full m-2 md:w-11/12 place-self-center  py-4 sm:h-24 backdrop-blur-sm bg-opacity-5  bg-slate-400 flex flex-row justify-between items-center px-5d sm:px-10 md:px-44  fixed top-0 rounded-2xl">
-      <div>ICON </div>
-      <div className="flex flex-row justify-center items-center gap-x-4 z-50">
-        <Link href={""}>Project</Link>
-        <Link href={""}>Experience</Link>
-        <Link href={""}>Contacts</Link>
+    <div className="fixed top-2 w-full z-50 p-1">
+      <div className="container mx-auto bg-slate-400 bg-opacity-5 backdrop-blur-sm rounded-2xl py-4 sm:h-24 flex flex-row justify-between items-center px-5 sm:px-10">
+        <div>ICON</div>
+        <div className="flex flex-row justify-center items-center gap-x-4">
+          <Link href="">Project</Link>
+          <Link href="">Experience</Link>
+          <Link href="">Contacts</Link>
+        </div>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@
 import React from "react";
 
 import Typewriter from "typewriter-effect";
-import ButtonFir from "../projectComponent/ButtonFir";
+import GetInTouch from "../projectComponent/GetInTouch";
 
 function Hero() {
   return (
@@ -28,7 +28,7 @@ function Hero() {
       </div>
       <div className="w-full flex justify-center items-center mt-4 sm:mt-16">
         <button className=""></button>
-        <ButtonFir />
+        <GetInTouch />
         <button></button>
       </div>
     </div>
