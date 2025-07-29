@@ -3,6 +3,7 @@ import React from "react";
 
 import Typewriter from "typewriter-effect";
 import GetInTouch from "../projectComponent/GetInTouch";
+import DownlaodCV from "../projectComponent/DownloadCV";
 
 function Hero() {
   return (
@@ -26,8 +27,8 @@ function Hero() {
           />
         </div>
       </div>
-      <div className="w-full flex justify-center items-center mt-4 sm:mt-16">
-        <button className=""></button>
+      <div className="w-full flex justify-center gap-8 items-center  mt-4 sm:mt-16">
+        <DownlaodCV />
         <GetInTouch />
         <button></button>
       </div>
