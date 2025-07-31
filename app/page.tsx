@@ -1,4 +1,5 @@
 import AboutMe from "../components/pageComp/AboutMe";
+import Experience from "../components/pageComp/Experience";
 import Hero from "../components/pageComp/Hero";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
       {" "}
       <Hero />
       <AboutMe />
+      <Experience />
     </div>
   );
 }

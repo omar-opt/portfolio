@@ -4,7 +4,7 @@ import "./globals.css";
 import MouseAnimation from "../components/MouseAnimation";
 import Footer from "../components/pageComp/Footer";
 import { motion } from "framer-motion";
-import favIcon from "../public/pic.jpg";
+import favIcon from "../public/pic.png";
 import NavBar from "../components/pageComp/NavBar";
 
 const montserrat = Fira_Code({

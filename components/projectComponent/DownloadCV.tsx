@@ -10,7 +10,7 @@ function DownlaodCV() {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: 13 }}
-      className="py-3 sm:py-5 px-4 sm:px-8 rounded-3xl drop-shadow shadow-sm font-bold text-sm sm:text-xl
+      className="hidden md:block py-3 sm:py-5 px-4 sm:px-8 rounded-3xl drop-shadow shadow-sm font-bold text-sm sm:text-xl
            text-black 
            shadow-slate-100 backdrop-blur-sm border hover:cursor-pointer z-10
            border-gray-200 
