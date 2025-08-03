@@ -13,12 +13,12 @@ export const DATA = {
     "C",
   ],
   contact: {
-    email: "hello@example.com",
-    tel: "+123456789",
+    email: "omarchabira7@gmail.com",
+    tel: "+213556265830",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/omar-opt",
         icon: Icons.github,
 
         navbar: true,
@@ -30,19 +30,7 @@ export const DATA = {
 
         navbar: true,
       },
-      X: {
-        name: "X",
-        url: "https://dub.sh/dillion-twitter",
-        icon: Icons.x,
 
-        navbar: true,
-      },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
-        navbar: true,
-      },
       email: {
         name: "Send Email",
         url: "#",
