@@ -22,3 +22,27 @@ body {
     #011627 0% 0% / 100px 100px repeat; */
   @apply bg-neutral-950;
 }
+
+@layer components {
+  /* Headline Styles */
+  .heading-1 {
+    @apply text-4xl font-bold tracking-tight;
+  }
+  .heading-2 {
+    @apply text-3xl font-semibold tracking-tight;
+  }
+  .heading-3 {
+    @apply text-xl tracking-tight text-gray-200;
+  }
+
+  /* Body Text Styles */
+  .body-large {
+    @apply text-lg text-gray-500 leading-relaxed;
+  }
+  .body-base {
+    @apply text-base text-gray-500 leading-relaxed;
+  }
+  .body-small {
+    @apply text-sm text-gray-500;
+  }
+}
