@@ -1,26 +1,15 @@
 import React from "react";
 import { DATA } from "../../data/data";
 import WorkCard from "../WorkCard";
-interface data {
-  company: string;
-  href: string;
-  badges: never[];
-  location: string;
-  title: string;
-  logoUrl: string;
-  start: string;
-  end: string;
-  description: string;
-}
 function Experience() {
   return (
-    <div className="w-9/12">
+    <div className="w-full sm:w-9/12 flex flex-col gap-6">
       <div>
         <p className="heading-2 ">Work Experience</p>
       </div>
-      <div className="flex flex-col justify-center items-center">
-        {DATA.work.map((o: data, i) => (
-          <WorkCard props={o} key={i} />
+      <div className="flex flex-col justify-center items-center gap-4">
+        {DATA.work?.map((o, i) => (
+          <WorkCard key={i} {...o} />
         ))}
       </div>
     </div>

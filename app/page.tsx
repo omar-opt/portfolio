@@ -2,6 +2,7 @@ import AboutMe from "../components/pageComp/AboutMe";
 import BlurFad from "../components/pageComp/BlurFad";
 import Experience from "../components/pageComp/Experience";
 import Hero from "../components/pageComp/Hero";
+import Skills from "../components/pageComp/Skills";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <BlurFad />
       <AboutMe />
       <Experience />
+      <Skills />
     </div>
   );
 }

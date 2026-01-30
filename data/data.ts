@@ -1,17 +1,29 @@
 import { Icons } from "../components/icons";
+import { FaJava, FaJs, FaReact, FaDocker, FaLinux } from "react-icons/fa";
+
+import {
+  SiTypescript,
+  SiNextdotjs,
+  SiKubernetes,
+  SiC,
+  SiAssemblyscript,
+} from "react-icons/si";
+
 export const DATA = {
   skilles: [
-    "React",
-    "Next.js",
-    "Typescript",
-    "Node.js",
-    "Python",
-    "NASM",
-    "Pascal",
-    "Docker",
-    "Kubernetes",
-    "C",
+    { name: "Java", icon: FaJava },
+    { name: "JavaScript", icon: FaJs },
+    { name: "TypeScript", icon: SiTypescript },
+    { name: "Assembly (NASM)", icon: SiAssemblyscript },
+    { name: "React", icon: FaReact },
+    { name: "Next.js", icon: SiNextdotjs },
+    { name: "React Native", icon: FaReact },
+    { name: "C", icon: SiC },
+    { name: "Docker", icon: FaDocker },
+    { name: "Kubernetes", icon: SiKubernetes },
+    { name: "Kali Linux", icon: FaLinux },
   ],
+
   contact: {
     email: "omarchabira7@gmail.com",
     tel: "+213556265830",
@@ -50,7 +62,7 @@ export const DATA = {
       logoUrl: "/omed.png",
       start: "Julay 2022 ",
       end: "Oct 2023",
-      description: "s",
+      description: "emplemnt the frontend",
     },
     {
       company: "Delegeu app",
@@ -61,7 +73,7 @@ export const DATA = {
       logoUrl: "/delegeu.png",
       start: "January 2023",
       end: "April 2024",
-      description: "s",
+      description: "emplemnt the frontend",
     },
     {
       company: "Ihsan ",
@@ -72,7 +84,7 @@ export const DATA = {
       logoUrl: "/ihsan.png",
       start: "April 2024",
       end: "January 2025",
-      description: "s",
+      description: "emplemnt the frontend",
     },
     {
       company: "akkadli",
@@ -83,7 +95,7 @@ export const DATA = {
       logoUrl: "/akkadli.png",
       start: "January 2025",
       end: "Jun 2025",
-      description: "s",
+      description: "emplemnt the frontend",
     },
   ],
 };
