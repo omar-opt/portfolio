@@ -1,5 +1,20 @@
 import React from "react";
+import { DATA } from "../../data/data";
+import { ProjectCard } from "../ProjectCard";
 
+interface ProjectCardProps {
+  work: {
+    company: string;
+    href: string;
+    location: string;
+    title: string;
+    start: string;
+    end: string;
+    description: string;
+    tech: string[];
+    pic: string;
+  };
+}
 function Projects() {
   return (
     <section className="w-full sm:w-9/12 flex flex-col gap-6">
@@ -11,10 +26,10 @@ function Projects() {
         </div>
         <div className="absolute w-full bg-gradient-radial from-[#ffffff79] to-[#2c2c2c82] h-[1px]"></div>
       </div>
-      <div className="flex flex-wrap gap-4  ">
-        {/* {DATA.skilles.map((skill) => (
-            <SkillCard key={skill.name} name={skill.name} Icon={skill.icon} />
-          ))} */}
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 max-w-[800px] mx-auto auto-rows-fr">
+        {DATA.work.map((obj) => (
+          <ProjectCard work={obj} key={obj.company} />
+        ))}
       </div>
     </section>
   );

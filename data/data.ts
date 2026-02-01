@@ -1,5 +1,9 @@
 import { Icons } from "../components/icons";
 import { FaJava, FaJs, FaReact, FaDocker, FaLinux } from "react-icons/fa";
+import omedPic from "./projects/omed.png";
+import delegeuPic from "./projects/delegeu.png";
+import ihsanPic from "./projects/ihsan.png";
+import akkadliPic from "./projects/akkadli.png";
 
 import {
   SiTypescript,
@@ -55,47 +59,66 @@ export const DATA = {
   work: [
     {
       company: "OMED",
-      href: "https://OMED.AGENCY",
+      href: "https://omed.agency",
       badges: [],
       location: "Remote",
-      title: "Front end",
+      title: "Frontend Developer",
       logoUrl: "/omed.png",
-      start: "Julay 2022 ",
-      end: "Oct 2023",
-      description: "emplemnt the frontend",
+      start: "July 2022",
+      end: "October 2023",
+      description:
+        "Implemented the frontend including landing pages and dashboards with a focus on responsive design and performance.",
+      tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Magic UI"],
+      pic: omedPic,
     },
     {
-      company: "Delegeu app",
-      badges: [],
+      company: "Delegeu App",
       href: "https://delegeu.net",
+      badges: [],
       location: "Remote",
-      title: "front end",
+      title: "Frontend Developer",
       logoUrl: "/delegeu.png",
       start: "January 2023",
       end: "April 2024",
-      description: "emplemnt the frontend",
+      description:
+        "Built and maintained the frontend, including landing pages and dashboards, ensuring full responsiveness across devices.",
+      tech: [
+        "Next.js",
+        "React Native",
+        "TypeScript",
+        "Tailwind CSS",
+        "Magic UI",
+        "SQLite",
+      ],
+      pic: delegeuPic,
     },
     {
-      company: "Ihsan ",
+      company: "Ihsan",
       href: "https://ihsan.charity/",
       badges: [],
-      location: "remote",
-      title: "front end",
+      location: "Remote",
+      title: "Frontend Developer",
       logoUrl: "/ihsan.png",
       start: "April 2024",
       end: "January 2025",
-      description: "emplemnt the frontend",
+      description:
+        "Implemented the frontend for landing pages and internal dashboards with a strong emphasis on responsive and accessible design.",
+      tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Magic UI"],
+      pic: ihsanPic,
     },
     {
-      company: "akkadli",
+      company: "Akkadli",
       href: "https://akkadli.com",
       badges: [],
-      location: "remote",
-      title: "front end",
+      location: "Remote",
+      title: "Frontend Developer",
       logoUrl: "/akkadli.png",
       start: "January 2025",
-      end: "Jun 2025",
-      description: "emplemnt the frontend",
+      end: "June 2025",
+      description:
+        "Developed the frontend including landing pages and dashboards, delivering a fully responsive and modern user experience.",
+      tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Magic UI"],
+      pic: akkadliPic,
     },
   ],
 };
