@@ -1,18 +1,18 @@
-import AboutMe from "../components/pageComp/AboutMe";
-import BlurFad from "../components/pageComp/BlurFad";
-import Experience from "../components/pageComp/Experience";
 import Hero from "../components/pageComp/Hero";
+import BlurFad from "../components/pageComp/BlurFad";
+import AboutMe from "../components/pageComp/AboutMe";
+import Experience from "../components/pageComp/Experience";
 import Skills from "../components/pageComp/Skills";
+import Projects from "../components/pageComp/Projects";
+
+const sections = [Hero, BlurFad, AboutMe, Experience, Skills, Projects];
 
 export default function Home() {
   return (
-    <div className="w-full flex flex-col items-center justify-center text-wrap  gap-y-5 sm:gap-y-16">
-      {" "}
-      <Hero />
-      <BlurFad />
-      <AboutMe />
-      <Experience />
-      <Skills />
+    <div className="w-full flex flex-col items-center justify-center text-wrap gap-y-5 sm:gap-y-16">
+      {sections.map((Section, index) => (
+        <Section key={index} />
+      ))}
     </div>
   );
 }
