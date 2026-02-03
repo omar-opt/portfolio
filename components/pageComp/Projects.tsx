@@ -18,7 +18,7 @@ interface ProjectCardProps {
 function Projects() {
   return (
     <section className="w-full sm:w-9/12 flex flex-col gap-6">
-      <div className="w-full flex justify-center items-center relative">
+      <div className="w-full flex justify-center items-center relative my-8">
         {" "}
         <div className="w-fit absolute bg-black h-full"></div>
         <div className="w-fit bg-gradient-to-r from-[#26262b] to-[#000000]  z-50  p-4 px-6 rounded-2xl border-white border-2 flex justify-center items-center ">

@@ -4,13 +4,13 @@ import pic from "../../public/pic.png";
 function AboutMe() {
   return (
     <div className="w-full flex flex-col sm:flex-row justify-center items-center gap-10 mt-8 ">
-      <div className="w-full sm:w-1/3 place-content-center  flex justify-center items-center">
+      <div className="w-full sm:w-1/3 place-content-center  flex justify-center items-center ">
         <Image
           src={pic}
           alt="my image"
           width={300}
           height={300}
-          className="rounded-full"
+          className="border-gray-500 border-4 rounded-full "
         />
       </div>
       <div

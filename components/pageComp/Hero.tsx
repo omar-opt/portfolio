@@ -22,7 +22,7 @@ function Hero() {
               autoStart: true,
               loop: false,
               deleteSpeed: Infinity,
-              delay: 100,
+              delay: 50,
             }}
           />
         </div>
