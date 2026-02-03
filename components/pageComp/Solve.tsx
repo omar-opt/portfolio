@@ -2,7 +2,7 @@ import React from "react";
 
 function Solve() {
   return (
-    <section className="w-full sm:w-9/12 flex flex-col gap-6">
+    <section className="w-full sm:w-9/12 flex flex-col gap-6 mb-10">
       <div className="w-full flex justify-center items-center relative my-8">
         {" "}
         <div className="w-fit absolute bg-black h-full"></div>

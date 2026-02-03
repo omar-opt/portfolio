@@ -19,12 +19,12 @@ function AboutMe() {
         <p className="heading-2 ">About Me</p>
 
         <p className="text-wrap heading-3 ">
-          Hello! I'm Omar Chabira, a passionate web developer and designer based
-          in Algeria. With over 2 years of experience in the digital landscape,
-          I specialize in turning complex ideas into elegant, functional, and
-          user-friendly web solutions. My journey in tech began with a deep
-          fascination for how things work, which evolved into a passion for
-          crafting seamless digital experiences from the ground up.
+          Hello! I&apos;m Omar Chabira, a passionate web developer and designer
+          based in Algeria. With over 2 years of experience in the digital
+          landscape, I specialize in turning complex ideas into elegant,
+          functional, and user-friendly web solutions. My journey in tech began
+          with a deep fascination for how things work, which evolved into a
+          passion for crafting seamless digital experiences from the ground up.
         </p>
       </div>
     </div>

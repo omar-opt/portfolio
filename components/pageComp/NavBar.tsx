@@ -1,17 +1,32 @@
-import Link from "next/link";
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
+import { FlickeringGrid } from "../ui/FlickeringGrid";
 
 function NavBar() {
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setHeight(window.innerHeight / 8);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <div className="fixed top-2 w-full z-50 p-1 left-0 ">
-      <div className="container mx-auto bg-slate-400 bg-opacity-5 backdrop-blur-sm rounded-2xl py-4 sm:h-24 flex flex-row justify-between items-center px-5 sm:px-10">
-        <div>ICON</div>
-        <div className="flex flex-row justify-center items-center gap-x-4">
-          <Link href="">Project</Link>
-          <Link href="">Experience</Link>
-          <Link href="">Contacts</Link>
-        </div>
-      </div>
+    <div className="top-0 w-full absolute left-0 overflow-hidden ">
+      <FlickeringGrid
+        className="w-full relative inset-0 z-0 "
+        squareSize={4}
+        gridGap={6}
+        color="#60A5FA"
+        maxOpacity={0.5}
+        flickerChance={0.1}
+        height={height}
+        width={2000}
+      />
     </div>
   );
 }

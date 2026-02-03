@@ -2,12 +2,12 @@
 import React from "react";
 
 import Typewriter from "typewriter-effect";
-import GetInTouch from "../projectComponent/GetInTouch";
-import DownlaodCV from "../projectComponent/DownloadCV";
+import GetInTouch from "../GetInTouch";
+import DownlaodCV from "../DownloadCV";
 
 function Hero() {
   return (
-    <div className="w-full px-5 sm:w-11/12 flex flex-col justify-center items-center mt-8 md:mt-24 ">
+    <div className="w-full px-5 sm:w-11/12 flex flex-col justify-center items-center ">
       <div className=" w-full text-center ">
         <p className="text-2xl md:text-6xl font-bold">
           Where Code Meets Creativity: Full-Stack Development & Design
@@ -22,17 +22,16 @@ function Hero() {
               autoStart: true,
               loop: false,
               deleteSpeed: Infinity,
-              delay: 50,
+              delay: 20,
             }}
           />
         </div>
       </div>
-      <div className="w-full flex justify-center md:gap-8 items-center mt-6 sm:mt-16">
+      {/* <div className="w-full flex justify-center md:gap-8 items-center mt-6 sm:mt-16">
         <DownlaodCV />
         <GetInTouch />
-      </div>
+      </div> */}
     </div>
   );
 }
-
 export default Hero;

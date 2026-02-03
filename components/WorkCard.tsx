@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { TfiArrowCircleRight } from "react-icons/tfi";
 interface WorkCardProps {
   company: string;
   href: string;
@@ -26,6 +27,7 @@ function WorkCard(props: Props) {
       </div>
       <div className="flex flex-col items-center sm:flex-row gap-2">
         <p className="text-sm ">{props.start}</p>
+        <TfiArrowCircleRight size={20} />
         <p className="hidden sm:block ">-</p>{" "}
         <p className="text-sm ">{props.end}</p>
       </div>

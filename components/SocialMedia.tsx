@@ -1,44 +1,40 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 import { Github, Mail, Facebook, Linkedin } from "lucide-react";
 import Link from "next/link";
+
 const socials = [
+  { icon: Github, href: "https://github.com/omar-opt", name: "GitHub" },
   {
-    icon: <Github size={25} />,
-    href: "/",
-    name: "Git hub",
-  },
-  {
-    icon: <Facebook size={25} />,
-    href: "/",
+    icon: Facebook,
+    href: "https://www.facebook.com/chabira.omarabdellahabdelaziz",
     name: "Facebook",
   },
+  { icon: Mail, href: "mailto:omarchabira7@gmil.com", name: "Mail" },
   {
-    icon: <Mail size={25} />,
-    href: "/",
-    name: "Mail",
-  },
-  {
-    icon: <Linkedin size={25} />,
-    href: "/",
-    name: "Linkedin",
+    icon: Linkedin,
+    href: "https://www.linkedin.com/in/omar-chabira-6a83552a4/",
+    name: "LinkedIn",
   },
 ];
 
 function SocialMedia() {
   return (
-    <nav className="flex  items-center justify-center gap-x-4  ">
-      {socials.map((s, i) => {
-        return (
-          <div key={i} className="flex flex-col  items-center justify-center">
-            <Link
-              href={s.href}
-              target={"_blank"}
-              className="border border-0.5 rounded-full  p-2">
-              <span>{s.icon}</span>
-            </Link>
-          </div>
-        );
-      })}
+    <nav className="flex items-center justify-center gap-2 ">
+      {socials.map((s, i) => (
+        <motion.div
+          key={i}
+          whileHover={{ scale: 1.5, y: -10 }}
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}>
+          <Link
+            href={s.href}
+            target="_blank"
+            className="flex items-center justify-center w-12 h-12 rounded-full bg-white/5 hover:bg-white/10 text-white transition-colors">
+            <s.icon size={22} />
+          </Link>
+        </motion.div>
+      ))}
     </nav>
   );
 }
