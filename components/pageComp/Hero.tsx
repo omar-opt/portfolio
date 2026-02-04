@@ -27,10 +27,10 @@ function Hero() {
           />
         </div>
       </div>
-      {/* <div className="w-full flex justify-center md:gap-8 items-center mt-6 sm:mt-16">
+      <div className="w-full flex justify-center md:gap-8 items-center mt-6 sm:mt-16">
         <DownlaodCV />
         <GetInTouch />
-      </div> */}
+      </div>
     </div>
   );
 }

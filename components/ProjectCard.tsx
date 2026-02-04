@@ -38,7 +38,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ work }: ProjectCardProps) {
   return (
-    <div className="flex flex-col h-full border border-border rounded-xl overflow-hidden hover:ring-2 hover:ring-muted transition-all">
+    <div className="flex flex-col h-full border border-border rounded-xl bg-gray-700/10  backdrop-blur-xl overflow-hidden hover:ring-4 hover:ring-muted transition-all">
       {/* Image */}
       <Link href={work.href} target="_blank" rel="noopener noreferrer">
         <Image src={work.pic} alt={work.company} />
