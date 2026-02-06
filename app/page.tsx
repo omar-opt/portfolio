@@ -1,13 +1,23 @@
 import Hero from "../components/pageComp/Hero";
 import BlurFad from "../components/pageComp/BlurFad";
 import AboutMe from "../components/pageComp/AboutMe";
-import Experience from "../components/pageComp/Experience";
+import Experience from "../components/pageComp/JourneySection";
 import Skills from "../components/pageComp/Skills";
 import Projects from "../components/pageComp/Projects";
 import Solve from "@/components/pageComp/Solve";
 import Footer from "@/components/pageComp/Footer";
+// import ContactSection from "@/components/pageComp/ContactMe";
 
-const sections = [Hero, BlurFad, AboutMe, Experience, Skills, Projects, Solve];
+const sections = [
+  Hero,
+  BlurFad,
+  AboutMe,
+  Experience,
+  Skills,
+  Projects,
+  Solve,
+  // ContactSection,
+];
 
 export default function Home() {
   return (

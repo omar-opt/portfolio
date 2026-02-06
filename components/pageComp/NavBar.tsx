@@ -19,11 +19,11 @@ function NavBar() {
     <div className="top-0 w-full absolute left-0 overflow-hidden ">
       <FlickeringGrid
         className="w-full relative inset-0 z-0 "
-        squareSize={4}
+        squareSize={1}
         gridGap={6}
-        color="#60A5FA"
+        color="#fff"
         maxOpacity={0.5}
-        flickerChance={0.1}
+        flickerChance={0.5}
         height={height}
         width={2000}
       />

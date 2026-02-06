@@ -4,6 +4,8 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { useState } from "react";
+
+import { motion } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 function ProjectImage({ src, alt }: { src?: string; alt: string }) {
   const [error, setError] = useState(false);
@@ -38,7 +40,16 @@ interface ProjectCardProps {
 
 export function ProjectCard({ work }: ProjectCardProps) {
   return (
-    <div className="flex flex-col h-full border border-border rounded-xl bg-gray-700/10  backdrop-blur-xl overflow-hidden hover:ring-4 hover:ring-muted transition-all">
+    <motion.article
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+      className={`group relative bg-gradient-to-br from-zinc-900/50 to-zinc-950/50 backdrop-blur-sm border border-zinc-800/50 rounded-3xl overflow-hidden hover:border-zinc-700/50 transition-colors duration-500 
+        
+      `}>
+      {/* Glow Effect */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-purple-500/5 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
       {/* Image */}
       <Link href={work.href} target="_blank" rel="noopener noreferrer">
         <Image src={work.pic} alt={work.company} />
@@ -83,6 +94,6 @@ export function ProjectCard({ work }: ProjectCardProps) {
           ))}
         </div>
       </div>
-    </div>
+    </motion.article>
   );
 }

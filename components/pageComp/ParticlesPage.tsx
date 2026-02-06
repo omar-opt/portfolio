@@ -12,8 +12,8 @@ export function ParticlesPage() {
   return (
     <Particles
       className="fixed inset-0 z-0 w-full"
-      quantity={300}
-      ease={50}
+      quantity={400}
+      ease={100}
       color={color}
       refresh
     />

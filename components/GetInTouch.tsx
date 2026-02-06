@@ -1,23 +1,17 @@
 "use client";
-import { motion, useMotionTemplate } from "framer-motion";
-import React from "react";
+import Button from "./Buttons";
+import { motion } from "framer-motion";
 
-function GetInTouch() {
-  const backgroundImage = useMotionTemplate`radial-gradient(30% 40% at 50% 50%, #2f2f2f 20%, #1A1A1A 90%, #1A1A1A 100%)`;
+import { Download, Mail } from "lucide-react";
+import React from "react";
+export default function GetInTouch() {
   return (
-    <motion.div
-      style={{ backgroundImage }}
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, delay: 3 }}
-      className="py-3 sm:py-5 px-4 sm:px-8 rounded-3xl drop-shadow shadow-sm font-bold text-sm sm:text-xl
-           text-white 
-           shadow-slate-300 backdrop-blur-sm border hover:cursor-pointer z-10
-           border-gray-700 
-           ">
+    <Button
+      variant="secondary"
+      icon={<Mail size={18} />}
+      href="mailto:omarchabira7@gmail.com"
+      delay={1}>
       Get in touch
-    </motion.div>
+    </Button>
   );
 }
-
-export default GetInTouch;
