@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import favIcon from "../public/pic.png";
 import NavBar from "../components/pageComp/NavBar";
 import { ParticlesPage } from "@/components/pageComp/ParticlesPage";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const montserrat = Fira_Code({
   subsets: ["latin"],
   variable: "--font-mont",
