@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="">
       <body
-        className={`${montserrat.variable}  flex flex-col font-mont mx-auto min-h-screen bg-background  max-w-7xl  py-12 sm:py-24 px-6`}>
+        className={`${montserrat.variable}  flex flex-col font-mont mx-auto min-h-screen bg-background  max-w-7xl  py-4 px-6`}>
         <NavBar />
         <div
           className="mt-28

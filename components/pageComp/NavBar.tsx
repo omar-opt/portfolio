@@ -17,6 +17,9 @@ function NavBar() {
 
   return (
     <div className="top-0 w-full absolute left-0 overflow-hidden ">
+      <div
+        className="w-full justify-center items-center top-0 h-12 md:h-16 absolute z-0
+       bg-gradient-to-b from-slate-400 to-cyan-500 bg-opacity-25 blur-xl backdrop-blur-lg "></div>
       <FlickeringGrid
         className="w-full relative inset-0 z-0 "
         squareSize={1}
